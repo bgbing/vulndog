@@ -14,6 +14,12 @@ if args.vuln!="":
     elif number==135791:
         langling='"蓝凌OA custom.jsp 任意文件读取漏洞批量扫描.py"'
         os.system("cd payload &&"+langling)
+    elif number==45972:
+        ruijie='"锐捷云课堂主机目录遍历漏洞.py"'
+        os.system("cd payload &&"+ruijie)
+    elif number==459721:
+        ruijie='"锐捷云课堂主机目录遍历漏洞批量扫描.py"'
+        os.system("cd payload &&"+ruijie)    
 else:
     print("""
 \033[1;36m __               __                               \033[0m
@@ -35,5 +41,7 @@ else:
     print('\033[1;36m目前更新漏洞\033[0m')
     print(' \033[1;36m          2021/5/1 蓝凌OA custom.jsp 任意文件读取漏洞 (13579)\033[0m ')
     print(' \033[1;36m          2021/5/1 蓝凌OA custom.jsp 任意文件读取漏洞批量扫描 (135791)\033[0m ')
+    print(' \033[1;36m          2021/5/1 锐捷云课堂主机目录遍历漏洞 (45972)\033[0m ')
+    print(' \033[1;36m          2021/5/1 锐捷云课堂主机目录遍历漏洞批量扫描 (459721)\033[0m ')
     sys.exit()
 
