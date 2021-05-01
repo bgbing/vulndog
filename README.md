@@ -1,9 +1,13 @@
 # bgbingscan
-bgbingscan，顾名思义，bgbing漏扫，持续发布近期漏洞利用脚本。
+bgbingscan，顾名思义，bgbing漏扫，持续更新漏洞。
 
 ![image](https://user-images.githubusercontent.com/51054495/116782150-181b1880-aaba-11eb-999e-905a15ee3f68.png)
 
-如何使用？
+验证漏洞
+
+python3 bgbingscan.py -u http://xxx.xxx.xxx.xxx
+
+利用漏洞
 
 python3 bgbingscan -v 13579 (漏洞编号)
 
