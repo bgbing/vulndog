@@ -1,7 +1,8 @@
 # bgbingscan
 bgbingscan，顾名思义，bgbing漏扫，持续更新漏洞。
 
-![image](https://user-images.githubusercontent.com/51054495/116782150-181b1880-aaba-11eb-999e-905a15ee3f68.png)
+![image](https://user-images.githubusercontent.com/51054495/116788858-8f62a380-aade-11eb-9e18-d3851476f3e1.png)
+
 
 验证漏洞
 
