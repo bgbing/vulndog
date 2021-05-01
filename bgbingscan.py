@@ -4,6 +4,7 @@ import argparse
 
 parser = argparse.ArgumentParser(description='bgbingscan help')
 parser.add_argument('-v','--vuln', help='Please Input a vuln number!',default='')
+parser.add_argument('-u','--url', help='Please Input a url!',default='')
 args=parser.parse_args()
 if args.vuln!="":
     number=args.vuln
@@ -19,7 +20,11 @@ if args.vuln!="":
         os.system("cd payload &&"+ruijie)
     elif number==459721:
         ruijie='"锐捷云课堂主机目录遍历漏洞批量扫描.py"'
-        os.system("cd payload &&"+ruijie)    
+        os.system("cd payload &&"+ruijie)
+elif args.url!="":
+    url=args.url
+    all='"allpayload.py"'
+    os.system("cd payload &&"+all+" "+url)
 else:
     print("""
 \033[1;36m __               __                               \033[0m
@@ -33,7 +38,10 @@ else:
 \033[1;36m                |                         \__ _ /      \033[0m    
 \033[1;36m          \__ _ /           """)
     print("\n")
-    print('\033[1;36m   使用方法\033[0m')
+    print('\033[1;36m   验证漏洞\033[0m')
+    print('\033[1;36m           python3 bgbingscan.py -u http://xxx.xxx.xxx.xxx\033[0m')
+    print("\n")
+    print('\033[1;36m   利用漏洞\033[0m')
     print('\033[1;36m           python3 bgbingscan.py -v xxxx\033[0m')
     print('\033[1;36m            or\033[0m')
     print('\033[1;36m           python3 bgbingscan.py --vuln xxxx\033[0m')
