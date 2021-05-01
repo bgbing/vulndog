@@ -14,3 +14,6 @@ python3 bgbingscan --vuln 13579 (漏洞编号)
 最新漏洞
 
 2021/5/1/  蓝凌OA custom.jsp 任意文件读取漏洞
+
+2021/5/1/ 蓝凌OA custom.jsp 任意文件读取漏洞批量扫描
+
