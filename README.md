@@ -16,6 +16,15 @@ python3 bgbingscan -v 13579 (漏洞编号)
 
 python3 bgbingscan --vuln 13579 (漏洞编号)
 
+例子：
+
+![image](https://user-images.githubusercontent.com/51054495/116789289-bd48e780-aae0-11eb-89b9-c7548464e7f1.png)
+
+![image](https://user-images.githubusercontent.com/51054495/116789292-c20d9b80-aae0-11eb-907d-f161d59fac61.png)
+
+![image](https://user-images.githubusercontent.com/51054495/116789301-c8037c80-aae0-11eb-8a3c-2c936a3f5812.png)
+
+
 最新漏洞
 
 2021/5/1/  蓝凌OA custom.jsp 任意文件读取漏洞
